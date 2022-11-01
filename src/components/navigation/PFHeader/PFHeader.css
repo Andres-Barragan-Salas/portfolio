@@ -1,0 +1,31 @@
+.site-header .link-container a {
+  position: relative;
+  color: var(--secondaryText);
+  transition: color .3s ease-in-out;
+}
+
+.site-header .link-container a:hover {
+  color: var(--primaryText);
+}
+
+.site-header .link-container a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primaryText);
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.site-header .link-container a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.site-header .link-container a:not(:first-child) {
+  margin-left: 50px;
+}

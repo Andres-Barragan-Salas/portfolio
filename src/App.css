@@ -1,38 +1,310 @@
-.App {
-  text-align: center;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #171717;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /** COLORS **/
+  /* GENERAL */
+  --primary: #FFF;
+  --secondary: #B5B5B5;
+  --background: #171717;
+  --transparent: #0000;
+  /* TEXT */
+  --primaryText: #FFF;
+  --secondaryText: #B5B5B5;
+  --placeholderText: #B5B5B588;
+  --inputBorder: #B5B5B588;
+  /* BUTTONS */
+  /* --primaryButtonContent: white;
+  --primaryButtonBackground: indigoBlue;
+  --secondaryButtonContent: indigoBlue;
+  --secondaryButtonBackground: gray1;
+  --disabledButtonContent: white;
+  --disabledButtonBackground: gray2; */
+  /* ICONS */
+  /* --primaryIcon: indigoBlue;
+  --secondaryIcon: gray2; */
+  /* CARDS */
+  /* --primaryCardTitle: white;
+  --primaryCardIcon: indigoBlue;
+  --primaryCardIconBackground: white;
+  --primaryCardActionIcon: white;
+  --primaryCardBackground: indigoBlue;
+  --secondaryCardTitle: darkBlueMagenta;
+  --secondaryCardIcon: indigoBlue;
+  --secondaryCardIconBackground: white;
+  --secondaryCardActionIcon: darkBlueMagenta;
+  --secondaryCardBackground: gray1; */
+  /* INFORMATION */
+  --success: #4ADE80;
+  --failure: #F87171;
+
+  /** SIZES **/
+  --max-width: 1500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* >>> GENERAL <<< */
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pf {
+  color: var(--primary);
+  font-family: Epilogue, -apple-system, Segoe UI, Helvetica Neue, Helvetica, Roboto;
+}
+
+.pf.app {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.pf.safe-area {
+  width: 100%;
+	max-width: var(--max-width);
+}
+
+a.pf {
+  text-decoration: none;
+  color: var(--primaryText);
+  display: block;
+}
+
+h2.pf {
+  margin: 0;
+}
+
+/* >>> MARGIN <<< */
+
+.pf.margin-s {
+  margin: 10px;
+}
+
+.pf.margin-vertical-s {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.pf.margin-horizontal-s {
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.pf.margin-m {
+  margin: 20px;
+}
+
+.pf.margin-vertical-m {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.pf.margin-horizontal-m {
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
+.pf.margin-l {
+  margin: 40px;
+}
+
+.pf.margin-vertical-l {
+  margin-top: 40px;
+  margin-bottom: 40px; 
+}
+
+.pf.margin-horizontal-l {
+  margin-left: 40px;
+  margin-right: 40px; 
+}
+
+.pf.margin-xl {
+  margin: 80px;
+}
+
+.pf.margin-vertical-xl {
+  margin-top: 80px;
+  margin-bottom: 80px; 
+}
+
+.pf.margin-horizontal-xl {
+  margin-left: 80px;
+  margin-right: 80px; 
+}
+
+/* >>> PADDING <<< */
+
+.pf.padding-s {
+  padding: 10px;
+}
+
+.pf.padding-vertical-s {
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.pf.padding-horizontal-s {
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+.pf.padding-m {
+  padding: 20px;
+}
+
+.pf.padding-vertical-m {
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.pf.padding-horizontal-m {
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+
+.pf.padding-l {
+  padding: 40px;
+}
+
+.pf.padding-vertical-l {
+  padding-top: 40px;
+  padding-bottom: 40px; 
+}
+
+.pf.padding-horizontal-l {
+  padding-left: 40px;
+  padding-right: 40px; 
+}
+
+.pf.padding-xl {
+  padding: 80px;
+}
+
+.pf.padding-vertical-xl {
+  padding-top: 80px;
+  padding-bottom: 80px; 
+}
+
+.pf.padding-horizontal-xl {
+  padding-left: 80px;
+  padding-right: 80px; 
+}
+
+/* >>> FLEX <<< */
+
+.pf.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.pf.flex-center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.pf.justify-content-flex-start {
+  justify-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pf.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.pf.justify-content-center {
+  justify-content: center;
+}
+
+.pf.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.pf.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.pf.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.pf.align-items-stretch {
+  align-items: stretch;
+}
+
+.pf.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.pf.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.pf.align-items-center {
+  align-items: center;
+}
+
+/* >>> TEXT TYPES <<< */
+
+.pf.main-text {
+  font-weight: 400;
+  font-size: 4em;
+}
+
+.pf.header-text {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.pf.title-text {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.pf.regular-text {
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.pf.highlight-text {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.pf.support-text {
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.pf.accessibility-text {
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+/* >>> TEXT COLORS <<< */
+
+.pf.text-color-primary {
+  color: var(--primaryText);
+}
+
+.pf.text-color-secondary {
+  color: var(--secondaryText);
+}
+
+.pf.text-color-placeholder {
+  color: var(--placeholderText);
 }
