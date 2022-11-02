@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   width: calc(min(100%, var(--max-width)) - 40px);
+  z-index: 1;
 }
 
 #site-header .link-container a {

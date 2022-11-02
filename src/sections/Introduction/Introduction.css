@@ -1,3 +1,28 @@
 #intro .content-container {
   padding-top: 60px;
 }
+
+#intro a {
+  position: relative;
+  color: var(--secondaryText);
+  margin-top: 100px;
+  display: inline-block;
+  transition: color .3s ease-in-out;
+}
+
+#intro a:hover {
+  color: var(--primaryText);
+}
+
+#intro a > i {
+  position: absolute;
+  bottom: 0;
+  right: -35px;
+  color: var(--secondaryText);
+  transition: all .3s ease-in-out;
+}
+
+#intro a:hover > i {
+  transform: translate(5px, 5px);
+  color: var(--primaryText);
+}

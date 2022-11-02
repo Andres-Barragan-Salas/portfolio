@@ -22,6 +22,9 @@ const Introduction = () => {
               I'm a Software Engineer,
               very passionate about frontend development and UX design.
             </p>
+            <a className="pf title-text" href="/#projects">
+              My projects <i className="bi bi-arrow-down-right" />
+            </a>
           </div>
           <div>
             <PFWireframeAnimation />
