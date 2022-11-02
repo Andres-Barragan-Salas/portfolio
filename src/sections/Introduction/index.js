@@ -10,8 +10,9 @@ const Introduction = () => {
         pf section-container
         flex-column justify-content-center">
         <div className="
-        pf flex-row align-items-center
-        justify-content-space-between">
+          content-container
+          pf flex-row align-items-center
+          justify-content-space-between">
           <div>
             <h2 className="pf main-text">¡Hola! 👋</h2>
             <h1 className="pf main-text">I'm Andrés Barragán.</h1>

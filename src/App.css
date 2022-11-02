@@ -82,6 +82,10 @@ section {
   height: 100%;
 }
 
+.pf.relative {
+  position: relative;
+}
+
 a.pf {
   text-decoration: none;
   color: var(--primaryText);

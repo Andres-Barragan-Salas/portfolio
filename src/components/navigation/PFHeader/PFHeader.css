@@ -1,7 +1,7 @@
 #site-header {
   position: fixed;
-  left: 65px;
-  right: 65px;
+  top: 0;
+  width: calc(min(100%, var(--max-width)) - 40px);
 }
 
 #site-header .link-container a {
