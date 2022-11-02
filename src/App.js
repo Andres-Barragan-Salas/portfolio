@@ -1,5 +1,6 @@
 import { PFHeader } from 'PFComponents';
 import Introduction from 'PFSections/Introduction';
+import Projects from 'PFSections/Projects';
 
 import './App.css';
 
@@ -10,6 +11,7 @@ const App = () => {
         <div className="pf padding-horizontal-m relative">
           <PFHeader />
           <Introduction />
+          <Projects />
         </div>
       </div>
     </div>

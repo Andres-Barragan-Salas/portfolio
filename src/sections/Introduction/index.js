@@ -4,7 +4,7 @@ import './Introduction.css';
 
 const Introduction = () => {
   return (
-    <section id="intro">
+    <section id="intro" className="full-height">
       <div
         className="
         pf section-container

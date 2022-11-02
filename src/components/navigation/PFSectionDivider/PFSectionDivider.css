@@ -1,0 +1,9 @@
+.section-divider h3 {
+  text-transform: uppercase;
+}
+
+.section-divider .line {
+  flex: 1;
+  border-bottom: 1px solid var(--inputBorder);
+  margin-left: 20px;
+}
