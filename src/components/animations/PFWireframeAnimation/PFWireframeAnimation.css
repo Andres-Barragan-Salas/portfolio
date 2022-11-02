@@ -1,0 +1,30 @@
+.wireframe-animation {
+  position: relative;
+  width: 700px;
+}
+
+.wireframe-animation .widget-1, 
+.wireframe-animation .widget-2 {
+  position: absolute;
+}
+
+.wireframe-animation .notif {
+  top: 100px;
+  left: 60px;
+}
+
+.wireframe-animation .card-1 {
+  top: 140px;
+  right: 130px;
+}
+
+.wireframe-animation .card-2 {
+  bottom: 210px;
+  left: 80px;
+}
+
+.wireframe-animation .heart {
+  bottom: 190px;
+  right: 80px;
+}
+

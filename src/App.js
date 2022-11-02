@@ -1,12 +1,16 @@
 import { PFHeader } from 'PFComponents';
+import Introduction from 'PFSections/Introduction';
+
 import './App.css';
 
 const App = () => {
   return (
     <div className="pf app">
       <div className="pf safe-area">
-        <PFHeader />
-
+        <div className="pf padding-horizontal-m">
+          <PFHeader />
+          <Introduction />
+        </div>
       </div>
     </div>
   );

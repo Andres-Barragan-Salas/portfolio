@@ -56,6 +56,10 @@ html, body {
   flex-direction: column;
 }
 
+section {
+  height: 100vh;
+}
+
 .pf {
   color: var(--primary);
   font-family: Epilogue, -apple-system, Segoe UI, Helvetica Neue, Helvetica, Roboto;
@@ -74,13 +78,17 @@ html, body {
 	max-width: var(--max-width);
 }
 
+.pf.section-container {
+  height: 100%;
+}
+
 a.pf {
   text-decoration: none;
   color: var(--primaryText);
   display: block;
 }
 
-h2.pf {
+p.pf, h1.pf, h2.pf {
   margin: 0;
 }
 
@@ -278,6 +286,7 @@ h2.pf {
 .pf.regular-text {
   font-weight: 200;
   font-size: 1.2em;
+  line-height: 2;
 }
 
 .pf.highlight-text {

@@ -3,8 +3,8 @@ import './PFHeader.css';
 const PFHeader = () => {
   return (
     <header
-      className="site-header
-      pf padding-m margin-vertical-m
+      id="site-header"
+      className="pf margin-vertical-l
       flex-row justify-content-space-between"
     >
       <div className="pf flex-row">
