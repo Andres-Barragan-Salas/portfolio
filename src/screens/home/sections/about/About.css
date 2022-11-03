@@ -1,0 +1,9 @@
+#about .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 14fr 6fr;
+  grid-gap: 40px;
+}
+
+#about .bio {
+  grid-column: 2;
+}

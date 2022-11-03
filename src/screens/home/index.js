@@ -2,11 +2,12 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setActiveSection } from 'PFStore/slices/navigationSlice';
-import Introduction from './sections/Introduction';
-import Projects from './sections/Projects';
+import About from './sections/about';
+import Introduction from './sections/introduction';
+import Projects from './sections/projects';
 
 const Home = () => {
-  const sectionRefs = useRef(new Array(2));
+  const sectionRefs = useRef(new Array(3));
   const { activeSection } = useSelector((state) => state.navigation);
   const dispatch = useDispatch();
 
@@ -30,6 +31,7 @@ const Home = () => {
     <div className="home-screen">
       <Introduction ref={(el) => sectionRefs.current[0] = el} />
       <Projects ref={(el) => sectionRefs.current[1] = el} />
+      <About ref={(el) => sectionRefs.current[2] = el} />
     </div>
   );
 };

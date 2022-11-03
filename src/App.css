@@ -292,7 +292,7 @@ p.pf, h1.pf, h2.pf, h3.pf {
 .pf.regular-text {
   font-weight: 200;
   font-size: 1.2em;
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .pf.highlight-text {
@@ -303,6 +303,7 @@ p.pf, h1.pf, h2.pf, h3.pf {
 .pf.support-text {
   font-weight: 100;
   font-size: 1em;
+  letter-spacing: .1rem;
 }
 
 .pf.accessibility-text {
