@@ -1,6 +1,20 @@
+import { useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import './PFHeader.css';
 
 const PFHeader = () => {
+  const { pathname } = useLocation();
+  const { activeSection } = useSelector((state) => state.navigation);
+
+  const sectionClassName = (sectionName) => {
+    const sectionIsActive
+      = pathname === '/'
+      && activeSection === sectionName;
+    return sectionIsActive ? 'pf active' : 'pf';
+  };
+
   return (
     <header
       id="site-header"
@@ -17,10 +31,18 @@ const PFHeader = () => {
         </h2>
       </div>
       <div className="pf flex-row align-items-center link-container">
-        <a className="pf" href="/#intro">Introduction</a>
-        <a className="pf" href="/#projects">Projects</a>
-        <a className="pf" href="/#about">About</a>
-        <a className="pf" href="/#contact">Contact</a>
+        <Link className={sectionClassName('intro')} to="/#intro">
+          Introduction
+        </Link>
+        <Link className={sectionClassName('projects')} to="/#projects">
+          Projects
+        </Link>
+        <Link className={sectionClassName('about')} to="/#about">
+          About
+        </Link>
+        <Link className={sectionClassName('contact')} to="/#contact">
+          Contact
+        </Link>
       </div>
     </header >
   );

@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="pf app">
       <div className="pf safe-area">
-        <div className="pf padding-horizontal-m relative">
+        <div className="pf padding-horizontal-l relative">
           <PFHeader />
           <Routes>
             <Route path="/" element={<Home />} />

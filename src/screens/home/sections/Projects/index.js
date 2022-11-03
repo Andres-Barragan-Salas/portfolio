@@ -1,10 +1,12 @@
+import React from 'react';
+
 import { PFProjectCard, PFSectionDivider } from 'PFComponents';
 
 import './Projects.css';
 
-const Projects = () => {
+const Projects = (_props, ref) => {
   return (
-    <section id="projects">
+    <section ref={ref} id="projects">
       <PFSectionDivider title="Projects" />
       <div className="projects-grid">
         <p className="pf description regular-text
@@ -51,4 +53,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default React.forwardRef(Projects);

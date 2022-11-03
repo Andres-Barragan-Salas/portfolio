@@ -1,10 +1,12 @@
+import React from 'react';
+
 import { PFWireframeAnimation } from 'PFComponents';
 
 import './Introduction.css';
 
-const Introduction = () => {
+const Introduction = (_props, ref) => {
   return (
-    <section id="intro" className="full-height">
+    <section ref={ref} id="intro" className="full-height">
       <div
         className="
         pf section-container
@@ -35,4 +37,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default React.forwardRef(Introduction);

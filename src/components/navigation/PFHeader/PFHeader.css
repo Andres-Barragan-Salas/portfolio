@@ -1,7 +1,7 @@
 #site-header {
   position: fixed;
   top: 0;
-  width: calc(min(100%, var(--max-width)) - 40px);
+  width: calc(min(100%, var(--max-width)) - 80px);
   z-index: 1;
 }
 
@@ -11,6 +11,7 @@
   transition: color .3s ease-in-out;
 }
 
+#site-header .link-container a.active,
 #site-header .link-container a:hover {
   color: var(--primaryText);
 }
@@ -27,7 +28,7 @@
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
 }
-
+#site-header .link-container a.active::before,
 #site-header .link-container a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
