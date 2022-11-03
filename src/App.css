@@ -5,6 +5,7 @@ html, body {
   padding: 0px;
   background-color: #171717;
   scroll-behavior: smooth;
+  scroll-padding-top: 140px;
 }
 
 :root {
