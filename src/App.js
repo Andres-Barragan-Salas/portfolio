@@ -1,6 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
+
 import { PFHeader } from 'PFComponents';
-import Introduction from 'PFSections/Introduction';
-import Projects from 'PFSections/Projects';
+import Home from 'PFScreens/home';
 
 import './App.css';
 
@@ -10,8 +11,9 @@ const App = () => {
       <div className="pf safe-area">
         <div className="pf padding-horizontal-m relative">
           <PFHeader />
-          <Introduction />
-          <Projects />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
         </div>
       </div>
     </div>
