@@ -295,20 +295,22 @@ p.pf, h1.pf, h2.pf, h3.pf {
   line-height: 1.8;
 }
 
-.pf.highlight-text {
-  font-weight: 400;
-  font-size: 1.2em;
-}
-
 .pf.support-text {
   font-weight: 100;
   font-size: 1em;
   letter-spacing: .1rem;
+  line-height: 1.5;
 }
 
 .pf.accessibility-text {
   font-weight: 100;
   font-size: 0.8em;
+}
+
+/* >>> TEXT ALTS <<< */
+
+.pf.highlight-text {
+  font-weight: 400;
 }
 
 /* >>> TEXT COLORS <<< */

@@ -1,0 +1,25 @@
+.timeline-event-component {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-event-component:last-of-type {
+  margin-bottom: 0;
+}
+
+.timeline-event-component:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-event-component:after {
+  box-shadow: 0 0 0 2px var(--primary);
+  left: -44.5px;
+  background: var(--background);
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  content: "";
+  top: 10px;
+}

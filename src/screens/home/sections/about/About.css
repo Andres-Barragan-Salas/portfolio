@@ -7,3 +7,11 @@
 #about .bio {
   grid-column: 2;
 }
+
+#about .about-title {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+  text-orientation: sideways;
+  text-align: end;
+  grid-column: 1;
+}

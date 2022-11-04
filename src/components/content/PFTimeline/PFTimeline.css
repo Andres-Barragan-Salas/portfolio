@@ -1,0 +1,6 @@
+.timeline-component {
+  border-left: 1px solid var(--primary);
+  list-style: none;
+  position: relative;
+  margin-left: 20px;
+}
