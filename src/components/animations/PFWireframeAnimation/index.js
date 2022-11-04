@@ -1,11 +1,11 @@
-import wireframeBasePng from 'PFAssets/hero-base-dark.png';
-import wireframeBaseWebp from 'PFAssets/hero-base-dark.webp';
-import wireframeWidgetPng from 'PFAssets/hero-big-widget-dark.png';
-import wireframeWidgetWebp from 'PFAssets/hero-big-widget-dark.webp';
-import wireframeHeartPng from 'PFAssets/hero-heart-widget-dark.png';
-import wireframeHeartWebp from 'PFAssets/hero-heart-widget-dark.webp';
-import wireframeNotifPng from 'PFAssets/hero-notif-widget-dark.png';
-import wireframeNotifWebp from 'PFAssets/hero-notif-widget-dark.webp';
+import wireframeBasePng from 'PFAssets/widget/hero-base-dark.png';
+import wireframeBaseWebp from 'PFAssets/widget/hero-base-dark.webp';
+import wireframeWidgetPng from 'PFAssets/widget/hero-big-widget-dark.png';
+import wireframeWidgetWebp from 'PFAssets/widget/hero-big-widget-dark.webp';
+import wireframeHeartPng from 'PFAssets/widget/hero-heart-widget-dark.png';
+import wireframeHeartWebp from 'PFAssets/widget/hero-heart-widget-dark.webp';
+import wireframeNotifPng from 'PFAssets/widget/hero-notif-widget-dark.png';
+import wireframeNotifWebp from 'PFAssets/widget/hero-notif-widget-dark.webp';
 
 import './PFWireframeAnimation.css';
 

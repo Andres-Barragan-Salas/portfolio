@@ -18,7 +18,8 @@ const Home = () => {
 
   const scrollHandler = () => {
     for (const section of sectionRefs.current) {
-      if (window.pageYOffset < section.offsetHeight) {
+      const sectionOffsetBottom = section.getBoundingClientRect().bottom;
+      if (sectionOffsetBottom > 1) {
         if (activeSection !== section.id) {
           dispatch(setActiveSection(section.id));
         }
