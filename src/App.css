@@ -319,6 +319,7 @@ button.pf:hover {
 .pf.accessibility-text {
   font-weight: 100;
   font-size: 0.8em;
+  letter-spacing: .06rem;
 }
 
 /* >>> TEXT ALTS <<< */

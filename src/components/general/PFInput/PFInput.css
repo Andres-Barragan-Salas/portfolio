@@ -1,0 +1,36 @@
+.pf-input-component {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-input-component .label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pf-input-component input,
+.pf-input-component textarea {
+  display: block;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--inputBorder);
+}
+
+.pf-input-component.error input,
+.pf-input-component.error textarea {
+  border-bottom: 1px solid var(--failure);
+}
+
+.pf-input-component input:focus,
+.pf-input-component textarea:focus {
+  outline: none !important;
+  border-bottom: 1px solid var(--primary);
+}
+
+.pf-input-component .error {
+  display: block;
+  margin-top: 10px;
+  color: var(--failure);
+  font-weight: 400;
+}
