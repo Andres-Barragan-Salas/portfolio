@@ -18,6 +18,12 @@ const About = (_props, ref) => {
           and co-founded harvestly.co, a hyper-local marketplace startup, where
           I led the development of their product as the company's CTO.
         </p>
+        <div className="pf flex-column
+          justify-content-flex-end align-items-flex-end">
+          <button className="pf regular-text">
+            <i className="bx bx-cloud-download" /> Download PDF
+          </button>
+        </div>
         <h2 className="pf about-title title-text">
           Professional experience <i className="bi bi-arrow-down" />
         </h2>
@@ -65,6 +71,30 @@ const About = (_props, ref) => {
             the project."
           />
         </PFTimeline>
+        <div>
+          <div className="about-img" />
+          <div className="pf margin-vertical-l">
+            <h2 className="pf title-text">
+              Tech knowledge <i className="bi bi-arrow-down" />
+            </h2>
+            <div className="pf tech-stack margin-vertical-m">
+              <i className="bx bxl-react" />
+              <i className="bx bxl-javascript" />
+              <i className="bx bxl-nodejs" />
+              <i className="bx bxl-html5" />
+              <i className="bx bxl-css3" />
+              <i className="bx bxl-github" />
+              <i className="bx bxl-c-plus-plus" />
+              <i className="bx bxs-data" />
+              <i className="bx bxl-mongodb" />
+              <i className="bx bxl-firebase" />
+              <i className="bx bxl-python" />
+              <i className="bx bxl-java" />
+              <i className="bx bxl-google-cloud" />
+              <i className="bx bxl-unity" />
+            </div>
+          </div>
+        </div>
         <h2 className="pf about-title title-text">
           Education <i className="bi bi-arrow-down" />
         </h2>

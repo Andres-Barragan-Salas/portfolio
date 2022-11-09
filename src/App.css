@@ -21,9 +21,9 @@ html, body {
   --placeholderText: #B5B5B588;
   --inputBorder: #B5B5B588;
   /* BUTTONS */
-  /* --primaryButtonContent: white;
-  --primaryButtonBackground: indigoBlue;
-  --secondaryButtonContent: indigoBlue;
+  --primaryButtonContent: #171717;
+  --primaryButtonBackground: #FFF;
+  /* --secondaryButtonContent: indigoBlue;
   --secondaryButtonBackground: gray1;
   --disabledButtonContent: white;
   --disabledButtonBackground: gray2; */
@@ -96,6 +96,20 @@ a.pf {
 
 p.pf, h1.pf, h2.pf, h3.pf {
   margin: 0;
+}
+
+button.pf {
+  cursor: pointer;
+  border: none;
+  color: var(--primaryButtonContent);
+  background: var(--primaryButtonBackground);
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: opacity 300ms ease;
+}
+
+button.pf:hover {
+  opacity: 0.7;
 }
 
 /* >>> MARGIN <<< */
