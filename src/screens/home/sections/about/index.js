@@ -1,5 +1,7 @@
 import React from 'react';
 
+import andresCV from 'PFAssets/files/CV_AndresBarragan.pdf';
+import andresPic from 'PFAssets/personal/andres-pic.jpeg';
 import { PFSectionDivider, PFTimeline, PFTimelineEvent } from 'PFComponents';
 
 import './About.css';
@@ -20,9 +22,10 @@ const About = (_props, ref) => {
         </p>
         <div className="pf flex-column
           justify-content-flex-end align-items-flex-end">
-          <button className="pf regular-text">
+          <a className="pf button regular-text" target="_blank" rel="noreferrer"
+            href={andresCV} download="CV_AndresBarragan.pdf">
             <i className="bx bx-cloud-download" /> Download PDF
-          </button>
+          </a>
         </div>
         <h2 className="pf about-title title-text">
           Professional experience <i className="bi bi-arrow-down" />
@@ -72,7 +75,8 @@ const About = (_props, ref) => {
           />
         </PFTimeline>
         <div>
-          <div className="about-img" />
+          <img className="about-img" loading="lazy"
+            src={andresPic} alt="Andres Barragan" />
           <div className="pf margin-vertical-l">
             <h2 className="pf title-text">
               Tech knowledge <i className="bi bi-arrow-down" />

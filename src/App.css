@@ -98,7 +98,8 @@ p.pf, h1.pf, h2.pf, h3.pf {
   margin: 0;
 }
 
-button.pf {
+button.pf,
+a.pf.button {
   cursor: pointer;
   border: none;
   color: var(--primaryButtonContent);
@@ -108,7 +109,8 @@ button.pf {
   transition: opacity 300ms ease;
 }
 
-button.pf:hover {
+button.pf:hover,
+a.pf.button:hover {
   opacity: 0.7;
 }
 
