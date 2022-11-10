@@ -1,0 +1,11 @@
+#site-footer .link-container a {
+  position: relative;
+  color: var(--secondaryText);
+  transition: color .3s ease-in-out;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+#site-footer .link-container a:hover {
+  color: var(--primaryText);
+}

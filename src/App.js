@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-import { PFHeader } from 'PFComponents';
+import { PFFooter, PFHeader } from 'PFComponents';
 import Home from 'PFScreens/home';
 
 import './App.css';
@@ -14,6 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
+          <PFFooter />
         </div>
       </div>
     </div>
