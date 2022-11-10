@@ -31,6 +31,5 @@
 .pf-input-component .error {
   display: block;
   margin-top: 10px;
-  color: var(--failure);
-  font-weight: 400;
+  font-size: 0.8em;
 }

@@ -341,3 +341,11 @@ button.pf:hover {
 .pf.text-color-placeholder {
   color: var(--placeholderText);
 }
+
+.pf.text-color-success {
+  color: var(--success);
+}
+
+.pf.text-color-failure {
+  color: var(--failure);
+}

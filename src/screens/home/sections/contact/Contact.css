@@ -12,3 +12,7 @@
 #contact .contact-form > * {
   margin-bottom: 40px;
 }
+
+#contact .contact-form > label {
+  display: block;
+}

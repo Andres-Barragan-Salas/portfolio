@@ -41,7 +41,7 @@ const PFInput = ({
         />
       }
       {error
-        ? <label className="pf error accessibility-text">{error}</label>
+        ? <label className="pf error text-color-failure">{error}</label>
         : null
       }
     </div>
