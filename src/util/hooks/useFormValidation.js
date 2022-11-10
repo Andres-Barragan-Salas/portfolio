@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
-import { emailValidate, textValidate } from './validators';
+import { emailValidate, textValidate } from '../validators';
 
 const validatorFuncs = {
   text: textValidate,
   email: emailValidate,
 };
 
-export const useFormValidation = (form, config) => {
+const useFormValidation = (form, config) => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -50,3 +50,5 @@ export const useFormValidation = (form, config) => {
 
   return [errors, validateField, validateForm];
 };
+
+export default useFormValidation;

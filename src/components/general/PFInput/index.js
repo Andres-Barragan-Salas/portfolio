@@ -11,6 +11,7 @@ const PFInput = ({
   onChange,
   onBlur,
   multiline,
+  disabled,
   error
 }) => {
   return (
@@ -29,6 +30,7 @@ const PFInput = ({
           value={value}
           onChange={onChange}
           onBlur={onBlur}
+          disabled={disabled}
         />
         : <input
           className="pf regular-text text-color-secondary"
@@ -38,6 +40,7 @@ const PFInput = ({
           value={value}
           onChange={onChange}
           onBlur={onBlur}
+          disabled={disabled}
         />
       }
       {error
@@ -53,6 +56,7 @@ PFInput.defaultProps = {
   type: 'text',
   placeholder: '',
   multiline: false,
+  disabled: false,
   error: null,
 };
 
@@ -65,6 +69,7 @@ PFInput.propTypes = {
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   multiline: PropTypes.bool,
+  disabled: PropTypes.bool,
   error: PropTypes.string,
 };
 

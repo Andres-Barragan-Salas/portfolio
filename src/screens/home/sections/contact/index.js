@@ -7,12 +7,12 @@ import {
   emailjsPK, emailjsServiceID,
   emailjsTemplateID
 } from 'PFConfig';
-import { useFormValidation } from 'PFUtil/hooks';
+import { useAsyncCall, useFormValidation } from 'PFUtil/hooks';
 
 import './Contact.css';
 
 const Contact = (_props, ref) => {
-  const [submitError, setSubmitError] = useState(false);
+  const [sendAsyncCall, sendLoading, sendError] = useAsyncCall();
   const [submittedBy, setSubmittedBy] = useState(null);
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -29,8 +29,7 @@ const Contact = (_props, ref) => {
     e.preventDefault();
     if (!validateForm()) return;
 
-    setSubmitError(false);
-    try {
+    sendAsyncCall(async () => {
       await send(emailjsServiceID, emailjsTemplateID, toSend, emailjsPK);
       setSubmittedBy(toSend.from_name);
       setToSend({
@@ -38,10 +37,7 @@ const Contact = (_props, ref) => {
         reply_to: '',
         message: '',
       });
-    } catch (err) {
-      console.error(err);
-      setSubmitError(true);
-    }
+    });
   };
 
   const handleChange = (e) => {
@@ -61,6 +57,7 @@ const Contact = (_props, ref) => {
             value={toSend.from_name}
             onChange={handleChange}
             onBlur={validateField}
+            disabled={sendLoading}
             error={errors.from_name}
           />
           <PFInput
@@ -71,6 +68,7 @@ const Contact = (_props, ref) => {
             value={toSend.reply_to}
             onChange={handleChange}
             onBlur={validateField}
+            disabled={sendLoading}
             error={errors.reply_to}
           />
           <PFInput
@@ -80,11 +78,14 @@ const Contact = (_props, ref) => {
             value={toSend.message}
             onChange={handleChange}
             onBlur={validateField}
+            disabled={sendLoading}
             error={errors.message}
             multiline
           />
           <button className="pf regular-text margin-vertical-l" type="submit">
-            Send message <i className="bi bi-arrow-up-right" />
+            {sendLoading
+              ? 'Loading...'
+              : <>Send message <i className="bi bi-arrow-up-right" /></>}
           </button>
           {submittedBy
             ? <label className="pf text-color-success">
@@ -92,7 +93,7 @@ const Contact = (_props, ref) => {
               I will get back to you asap!
             </label>
             : null}
-          {submitError
+          {sendError
             ? <label className="pf text-color-failure">
               Oops! Something went wrong :(
             </label>
