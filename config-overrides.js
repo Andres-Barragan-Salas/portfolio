@@ -7,7 +7,7 @@ module.exports = function override(config) {
     PFConfig: './src/config',
     PFScreens: './src/screens',
     PFStore: './src/store',
-    PFUtils: './src/utils',
+    PFUtil: './src/util',
   })(config);
 
   return config;

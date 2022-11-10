@@ -7,6 +7,7 @@ import {
   emailjsPK, emailjsServiceID,
   emailjsTemplateID
 } from 'PFConfig';
+import { useFormValidation } from 'PFUtil/hooks';
 
 import './Contact.css';
 
@@ -15,20 +16,27 @@ const Contact = (_props, ref) => {
   const [submittedBy, setSubmittedBy] = useState(null);
   const [toSend, setToSend] = useState({
     from_name: '',
-    message: '',
     reply_to: '',
+    message: '',
+  });
+  const [errors, validateField, validateForm] = useFormValidation(toSend, {
+    from_name: ['text', 'Please enter your name'],
+    reply_to: ['email', null],
+    message: ['text', 'Please enter your message'],
   });
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setSubmitError(false);
     try {
       await send(emailjsServiceID, emailjsTemplateID, toSend, emailjsPK);
       setSubmittedBy(toSend.from_name);
       setToSend({
         from_name: '',
-        message: '',
         reply_to: '',
+        message: '',
       });
     } catch (err) {
       console.error(err);
@@ -39,6 +47,7 @@ const Contact = (_props, ref) => {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
 
   return (
     <div ref={ref} id="contact">
@@ -51,13 +60,18 @@ const Contact = (_props, ref) => {
             placeholder="Andres Barragan"
             value={toSend.from_name}
             onChange={handleChange}
+            onBlur={validateField}
+            error={errors.from_name}
           />
           <PFInput
             name="reply_to"
+            type="email"
             label="Where can I reach you? *"
             placeholder="andres@example.com"
             value={toSend.reply_to}
             onChange={handleChange}
+            onBlur={validateField}
+            error={errors.reply_to}
           />
           <PFInput
             name="message"
@@ -65,6 +79,8 @@ const Contact = (_props, ref) => {
             placeholder="Hello Andres, let's connect!"
             value={toSend.message}
             onChange={handleChange}
+            onBlur={validateField}
+            error={errors.message}
             multiline
           />
           <button className="pf regular-text margin-vertical-l" type="submit">

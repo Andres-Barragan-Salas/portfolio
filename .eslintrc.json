@@ -29,6 +29,7 @@
         "operator-linebreak": ["warn", "before"],
         "react/jsx-wrap-multilines": "warn",
         "import/no-unresolved": "off",
+        "guard-for-in": "off",
         "comma-dangle": ["error", {
             "arrays": "only-multiline",
             "objects": "only-multiline",
