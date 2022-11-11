@@ -23,7 +23,9 @@ const PFHeader = () => {
       className="pf margin-vertical-l
       flex-row justify-content-space-between"
     >
-      <img src={portfolioLogo} alt="Andres Barragan" loading="lazy" />
+      <Link to="/#intro">
+        <img src={portfolioLogo} alt="Andres Barragan" loading="lazy" />
+      </Link>
       <div className="pf flex-row align-items-center link-container">
         <Link className={sectionClassName('intro')} to="/#intro">
           Introduction
