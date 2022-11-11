@@ -20,7 +20,7 @@ const About = (_props, ref) => {
           and co-founded harvestly.co, a hyper-local marketplace startup, where
           I led the development of their product as the company's CTO.
         </p>
-        <div className="pf flex-column
+        <div className="pf download-container flex-column
           justify-content-flex-end align-items-flex-end">
           <a className="pf button regular-text" target="_blank" rel="noreferrer"
             href={andresCV} download="CV_AndresBarragan.pdf">
@@ -74,7 +74,7 @@ const About = (_props, ref) => {
             the project."
           />
         </PFTimeline>
-        <div>
+        <div className="personal-container">
           <img className="about-img" loading="lazy"
             src={andresPic} alt="Andres Barragan" />
           <div className="pf margin-vertical-l">

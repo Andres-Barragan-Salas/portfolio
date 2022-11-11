@@ -26,3 +26,25 @@
   font-size: 2.5em;
   margin: 0 10px 10px 0;
 }
+
+@media only screen and (max-width: 1000px) {
+  #about .about-grid {
+    grid-template-columns: 1fr 20fr;
+  }
+
+  #about .personal-container {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #about .download-container {
+    grid-column: 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about .about-grid {
+    grid-template-columns: 1fr 30fr;
+    grid-gap: 20px;
+  }
+}
