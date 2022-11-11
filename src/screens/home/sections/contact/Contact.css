@@ -16,3 +16,21 @@
 #contact .contact-form > label {
   display: block;
 }
+
+
+@media only screen and (max-width: 900px) {
+  #contact .contact-grid {
+    grid-template-columns: 1fr 24fr;
+  }
+
+  #contact .contact-prompt {
+    grid-column: 2;
+    grid-row: 1;
+  };
+}
+
+@media only screen and (max-width: 550px) {
+  #contact .contact-grid {
+    grid-gap: 20px;
+  }
+}
