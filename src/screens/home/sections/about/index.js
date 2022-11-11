@@ -13,8 +13,8 @@ const About = (_props, ref) => {
       <div className="about-grid">
         <p className="pf bio regular-text
           text-color-secondary margin-vertical-l">
-          I'm a Computer Science Engineering student, currently in my 9th
-          semester. I like to learn a lot on my own and I'm very passionate
+          I'm a Computer Science Engineering student, I'll be graduating on
+          December 2022. I like to learn a lot on my own and I'm passionate
           about frontend development and UX design. In recent years I have had
           experience as a Software Engineering Intern at Meta/Facebook (thrice),
           and co-founded harvestly.co, a hyper-local marketplace startup, where
