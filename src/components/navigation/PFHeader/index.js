@@ -27,37 +27,6 @@ const PFHeader = () => {
     setSideMenuActive(false);
   };
 
-  const Links = () => {
-    return (
-      <>
-        <Link
-          className={sectionClassName('intro')}
-          onClick={hideSideMenu}
-          to="/#intro">
-          Introduction
-        </Link>
-        <Link
-          className={sectionClassName('projects')}
-          onClick={hideSideMenu}
-          to="/#projects">
-          Projects
-        </Link>
-        <Link
-          className={sectionClassName('about')}
-          onClick={hideSideMenu}
-          to="/#about">
-          About
-        </Link>
-        <Link
-          className={sectionClassName('contact')}
-          onClick={hideSideMenu}
-          to="/#contact">
-          Contact
-        </Link>
-      </>
-    );
-  };
-
   return (
     <header
       id="site-header"
@@ -68,7 +37,18 @@ const PFHeader = () => {
         <img src={portfolioLogo} alt="Andres Barragan" loading="lazy" />
       </Link>
       <div className="pf flex-row align-items-center link-container">
-        <Links />
+        <Link className={sectionClassName('intro')} to="/#intro">
+          Introduction
+        </Link>
+        <Link className={sectionClassName('projects')} to="/#projects">
+          Projects
+        </Link>
+        <Link className={sectionClassName('about')} to="/#about">
+          About
+        </Link>
+        <Link className={sectionClassName('contact')} to="/#contact">
+          Contact
+        </Link>
       </div>
       <div className={`side-menu-container ${sideMenuActive ? 'active' : ''}`} >
         <div className="side-menu-background" onClick={hideSideMenu} />
@@ -78,7 +58,30 @@ const PFHeader = () => {
         </button>
         <div className="side-menu">
           <div className="side-menu-links pf margin-horizontal-l">
-            <Links />
+            <Link
+              className={sectionClassName('intro')}
+              onClick={hideSideMenu}
+              to="/#intro">
+              Introduction
+            </Link>
+            <Link
+              className={sectionClassName('projects')}
+              onClick={hideSideMenu}
+              to="/#projects">
+              Projects
+            </Link>
+            <Link
+              className={sectionClassName('about')}
+              onClick={hideSideMenu}
+              to="/#about">
+              About
+            </Link>
+            <Link
+              className={sectionClassName('contact')}
+              onClick={hideSideMenu}
+              to="/#contact">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
