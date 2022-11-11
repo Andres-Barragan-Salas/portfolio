@@ -2,6 +2,11 @@
   padding-top: 60px;
 }
 
+#intro .title-container {
+  margin-right: -80vw;
+  z-index: 1;
+}
+
 #intro a {
   position: relative;
   color: var(--secondaryText);
@@ -25,4 +30,10 @@
 #intro a:hover > i {
   transform: translate(5px, 5px);
   color: var(--primaryText);
+}
+
+@media only screen and (max-width: 750px) {
+  #intro .title-container {
+    margin-right: 0;
+  }
 }

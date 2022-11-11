@@ -15,7 +15,7 @@ const Introduction = (_props, ref) => {
           content-container
           pf flex-row align-items-center
           justify-content-space-between">
-          <div>
+          <div className="title-container">
             <h2 className="pf main-text">¡Hola! 👋</h2>
             <h1 className="pf main-text">I'm Andrés Barragán.</h1>
             <p className="

@@ -4,8 +4,7 @@ const PFFooter = () => {
   return (
     <footer
       id="site-footer"
-      className="pf margin-vertical-xl
-      flex-row justify-content-space-between">
+      className="pf margin-vertical-xl">
       <div className="link-container">
         <a href="https://github.com/abarragan02" target="_blank" rel="noopener noreferrer">
           GitHub
