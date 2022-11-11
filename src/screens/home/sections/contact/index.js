@@ -27,6 +27,7 @@ const Contact = (_props, ref) => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setSubmittedBy(null);
     if (!validateForm()) return;
 
     sendAsyncCall(async () => {
@@ -82,7 +83,8 @@ const Contact = (_props, ref) => {
             error={errors.message}
             multiline
           />
-          <button className="pf regular-text margin-vertical-l" type="submit">
+          <button disabled={sendLoading} type="submit"
+            className="pf regular-text margin-vertical-l">
             {sendLoading
               ? 'Loading...'
               : <>Send message <i className="bi bi-arrow-up-right" /></>}
