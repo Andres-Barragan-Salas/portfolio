@@ -8,6 +8,12 @@ html, body {
   scroll-padding-top: 140px;
 }
 
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 :root {
   /** COLORS **/
   /* GENERAL */
