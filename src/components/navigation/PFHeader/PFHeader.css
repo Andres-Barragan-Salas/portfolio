@@ -5,6 +5,10 @@
   z-index: 1;
 }
 
+#site-header img {
+  height: 55px;
+}
+
 #site-header .link-container a {
   position: relative;
   color: var(--secondaryText);
