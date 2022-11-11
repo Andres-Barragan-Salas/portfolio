@@ -5,7 +5,8 @@ import './PFProjectCard.css';
 const PFProjectCard = ({ imgSrc, title, description }) => {
   return (
     <div className="project-card">
-      <div className="project-img" />
+      <img className="project-img" loading="lazy"
+        src={imgSrc} alt={title} />
       <p className="pf support-text
         text-color-secondary margin-vertical-m">
         {description}
