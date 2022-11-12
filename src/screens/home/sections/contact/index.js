@@ -103,7 +103,7 @@ const Contact = (_props, ref) => {
         </form>
         <div className="contact-prompt">
           <p className="pf regular-text">
-            Contact me through this form or by direct email on
+            Contact me through this form or by direct email at
             andresbarragan0202@gmail.com. Links to my social networks are down
             below.
           </p>
