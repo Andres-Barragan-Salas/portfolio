@@ -27,7 +27,7 @@ const Projects = (_props, ref) => {
         </h2>
         <div className="pf work-projects">
           <PFProjectCard
-            title="harvesty.co"
+            title="harvestly.co"
             description="e-commerce website"
             imgSrc={harvestlyPic} />
           <PFProjectCard
