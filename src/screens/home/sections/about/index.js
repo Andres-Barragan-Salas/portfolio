@@ -13,13 +13,10 @@ const About = (_props, ref) => {
       <div className="about-grid">
         <p className="pf bio regular-text
           text-color-secondary margin-vertical-l">
-          I'm a Computer Science Engineering student from Mexico City, and I'll
-          be graduating in December 2022. I like to learn a lot on my own and
-          I'm passionate about frontend development and UX design. In recent
-          years I have had experience as a Software Engineering Intern at
-          Meta/Facebook (thrice), and co-founded harvestly.co, a hyper-local
-          marketplace startup, where I led the development of their product as
-          the company's CTO.
+          I'm a software engineer from Mexico City, graduating with the highest
+          GPA in Computer Science from "Tecnológico de Monterrey" in December
+          2022. 'm deeply passionate about software development, always eager to
+          learn independently, and stay up-to-date with emerging tech trends.
         </p>
         <div className="pf download-container flex-column
           justify-content-flex-end align-items-flex-end">
@@ -33,46 +30,55 @@ const About = (_props, ref) => {
         </h2>
         <PFTimeline>
           <PFTimelineEvent
+            company="Pefai"
+            place="CDMX"
+            title="Backend Engineer"
+            meta="January 2023 - Present"
+            description="Developed Golang-MongoDB backend for no-code
+            configurator, orchestrating frontend, backend, and client DB
+            architecture. Achieved scalability, modularity, and an 80%
+            reduction in loading times, enhancing overall system efficiency."
+          />
+          <PFTimelineEvent
             company="Meta"
             place="Menlo Park"
             title="SWE Intern @ Sharing Experiences"
             meta="June 2022 - September 2022"
-            description="Mobile (iOS) development with Objective-C on the
-            Facebook App. Built a feature for rich media (GIFs, stickers, etc.)
-            replies to improve user engagement for the status feature. Focused
-            on the scalability of the feature (for more media types to be
-            supported with ease). Implemented tests, arranged QA, and configured
-            group experiments for said feature."
+            description="Facebook's iOS development, crafting a rich media
+            response feature in Objective-C for the status feature. Elevated
+            user engagement with GIFs and stickers, prioritizing scalability.
+            Led testing and experiments for validation."
           />
           <PFTimelineEvent
             company="harvestly.co"
             place="San Luis Obispo"
             title="Co-Founder & CTO"
             meta="October 2020 - June 2022 [REMOTE]"
-            description="Built a hyper-local marketplace for small business
-            owners. Web development using React and Redux. Built customer,
-            vendor, and admin-facing portals. Included data visualization and
-            analytics for vendors and admins. Designed the system’s requirements
-            and UI. Led the engineering team (see https://harvestly.co/)."
+            description="Constructed a hyper-local marketplace for small
+            business owners, employing React and Redux for web development.
+            Developed customer, vendor, and admin-facing portals, overseeing
+            design, engineering, and successful launch of 3 California markets,
+            injecting over 250,000 USD into the local economy."
           />
           <PFTimelineEvent
             company="Facebook"
             place="Menlo Park"
             title="SWE Intern @ Gaming Services"
             meta="June 2021 - August 2021 [REMOTE]"
-            description="Development of SDK tools for game developers to trigger
-            haptic feedback on games playable through the Facebook App. Made
-            native changes to the iOS and Android versions of the FB app."
+            description="Contributed to SDK tool development enabling haptic
+            feedback for in-app games on Facebook. Implemented native
+            modifications for iOS and Android versions of the Facebook App,
+            enhancing the gaming experience."
           />
           <PFTimelineEvent
             company="Facebook"
             place="Menlo Park"
             title="FBU iOS Intern"
             meta="June 2020 - August 2020 [REMOTE]"
-            description="iOS development using Objective-C. Built an app to
-            support small businesses' growth and networking in a hyper-local
-            market. Made use of document-oriented DBs and built an API for
-            the project."
+            description="Objective-C iOS development for a hyper-local business
+            networking app, leveraging document-oriented databases. Designed
+            and implemented an API to support small business growth and
+            networking, promoting community engagement."
           />
         </PFTimeline>
         <div className="personal-container">
@@ -83,15 +89,16 @@ const About = (_props, ref) => {
               Tech knowledge <i className="bi bi-arrow-down" />
             </h2>
             <div className="pf tech-stack margin-vertical-m">
-              <i className="bx bxl-react" />
+              <i className="bx bxl-go-lang" />
+              <i className="bx bxl-mongodb" />
               <i className="bx bxl-javascript" />
+              <i className="bx bxl-react" />
               <i className="bx bxl-nodejs" />
               <i className="bx bxl-html5" />
               <i className="bx bxl-css3" />
               <i className="bx bxl-github" />
               <i className="bx bxl-c-plus-plus" />
               <i className="bx bxs-data" />
-              <i className="bx bxl-mongodb" />
               <i className="bx bxl-firebase" />
               <i className="bx bxl-python" />
               <i className="bx bxl-java" />
@@ -109,8 +116,8 @@ const About = (_props, ref) => {
             place="Mexico City"
             title="Computer Science"
             meta="August 2018 - December 2022"
-            description="Bachelor of Engineering · GPA: 98/100 · Former
-            president of the Computer Science Student Council (SATI)"
+            description="Bachelor of Engineering · GPA: 98/100 · President
+            of the Computer Science Student Council (SATI) · Top GPA"
           />
         </PFTimeline>
       </div>

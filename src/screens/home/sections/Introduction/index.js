@@ -21,8 +21,8 @@ const Introduction = (_props, ref) => {
             <p className="
               pf margin-vertical-m
               regular-text text-color-secondary">
-              I'm a Software Engineer,
-              passionate about software development and UX design.
+              Software engineer with four years of experience,
+              specializing in backend development.
             </p>
             <a className="pf title-text" href="/#projects">
               My projects <i className="bi bi-arrow-down-right" />

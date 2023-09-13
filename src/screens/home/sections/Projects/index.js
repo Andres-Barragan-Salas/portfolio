@@ -8,6 +8,7 @@ import flightSimulatorPic from 'PFAssets/projects/flight-simulator-pic.jpeg';
 import flixerPic from 'PFAssets/projects/flixer-pic.jpeg';
 import harvestlyPic from 'PFAssets/projects/harvestly-pic.jpeg';
 import hobbiPic from 'PFAssets/projects/hobbi-pic.jpeg';
+import pefaiPic from 'PFAssets/projects/pefai-pic.jpeg';
 import { PFProjectCard, PFSectionDivider } from 'PFComponents';
 
 import './Projects.css';
@@ -26,6 +27,10 @@ const Projects = (_props, ref) => {
           Work-related projects <i className="bi bi-arrow-down" />
         </h2>
         <div className="pf work-projects">
+          <PFProjectCard
+            title="Pefai builder"
+            description="no-code configurator"
+            imgSrc={pefaiPic} />
           <PFProjectCard
             title="harvestly.co"
             description="e-commerce website"
